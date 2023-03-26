@@ -1,7 +1,6 @@
 import React from 'react'
 
 import SearchByImage from '../components/SearchByImage'
-import SearchByName from '../components/SearchByName'
 import SearchByIngredients from '../components/SearchByIngredients'
 
 
