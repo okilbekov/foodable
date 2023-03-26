@@ -10,7 +10,8 @@
 
 }
 @media (max-width: 991.5px) {
- .name-input__space {
+.mobile-dispaly-none    
+ {
     display: none;
  }
 
@@ -24,14 +25,23 @@
     .header-title {
         font-size: 30px;
     }
+
+    .header-subtitle {
+        font-size: 20px;
+    }
     .tag-input {
-        max-width: 250px;
+        max-width: 200px;
     }
     .new-title 
     {
-        font-size: 30px;
+        font-size: 40px;
     }
-
+    .name-input {
+        max-width: 200px;
+    }
+    .component-title {
+        font-size: 40px;
+    }
 }
 
 
@@ -59,6 +69,9 @@
     }
     .card {
         max-width: 320px;
-        height: 380px;
+        height: 360px;
     }
+    .card-title {
+        font-size: 20px;
+    }   
 }

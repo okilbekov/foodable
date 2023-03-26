@@ -140,6 +140,15 @@ section {
     font-weight: 800;
 
 }
+.component-title {
+    color: #000;
+    font-size: 52px;
+    margin-bottom: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 50px;    
+}
 
 .header-subtitle {
     font-family: 'Raleway', sans-serif;
@@ -147,6 +156,7 @@ section {
     margin-bottom: 12px;
     color: #000;
     font-weight: 300;
+    margin-bottom: 40px;    
 
 
 }
@@ -332,8 +342,8 @@ section {
     width: 100%;
 	padding: 6px 10px;
 	border: 1px solid transparent;
-    background-color: white;
-    color: #000;
+    background-color: green;
+    color: #fff;
 	border-radius: 20px;
 	font-size: 16px;
 	outline: none;
@@ -356,7 +366,6 @@ section {
 }
 .search-name__space {
     display: flex;
-  
     justify-content: center;
     align-items: center;
 }

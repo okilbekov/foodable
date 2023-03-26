@@ -55,7 +55,7 @@ const SearchByIngredients = () => {
 			<div >
 				<div className='search-name__space'>
 				<TagInput  onAdd={handleAddIngredient} />
-				<button className='ingredient-input__button' onClick={handleSearchByIngredients}>Search</button></div>
+				<button className='name-input__button' onClick={handleSearchByIngredients}>Search</button></div>
 				<TagsContainer
 					ingredients={ingredients}
 					onRemove={handleRemoveIngredient}

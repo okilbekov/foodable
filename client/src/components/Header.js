@@ -11,7 +11,9 @@ const Header = () => {
                 </a> */}
 
                 {/* <a className="js-scroll-to-id navbar-link " href="/create_food.html">About</a> */}
+				<div className="mobile-dispaly-none" >
 				<SearchByName  />
+				</div>
             </div>
         </nav>
 		</div>

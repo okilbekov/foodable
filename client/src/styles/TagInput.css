@@ -11,7 +11,9 @@
 	font-size: 14px;
 	outline: none;
 	transition: border-color 0.15s ease-in-out;
-	width:400px
+	width:400px;
+	
+
 }
   
 .tag-input:focus {
