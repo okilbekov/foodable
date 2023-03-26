@@ -2,6 +2,8 @@
 
 Foodable is a web application designed to make cooking easy, fun, and inspiring by helping users discover new recipes through various search methods. With Foodable, users can search for recipes by name, by image, or by ingredients they have on hand.
 
+[Link to presentation](https://docs.google.com/presentation/d/1KDcDn-DE0w5510qwYw-5xH4wELGvDqDQuWcvEE_00Dc/edit?usp=sharing)
+
 ![screenshot](./screenshot.png)
 
 
