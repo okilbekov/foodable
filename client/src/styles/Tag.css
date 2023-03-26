@@ -1,0 +1,23 @@
+.tag {
+	display: inline-flex;
+	align-items: center;
+	background-color: #f1f1f1;
+	border-radius: 20px;
+	padding: 5px 10px;
+	margin: 5px;
+	font-size: 14px;
+
+}
+  
+.tag-text {
+	margin-right: 5px;
+}
+  
+.tag-delete-button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+	outline: none;
+}
+  

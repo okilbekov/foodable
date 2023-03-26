@@ -1,0 +1,361 @@
+/* font-family: 'Montserrat',
+sans-serif;
+font-family: 'Raleway';
+font-family: 'Roboto',
+sans-serif; */
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.container {
+    max-width: 1220px;
+}
+
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+}
+
+.header-map {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+
+
+}
+
+
+.nav {
+    padding-top: 20px;
+    color: black;
+    background: #000;
+    padding-bottom: 20px;
+
+}
+
+.navbar-logo:hover,
+.navbar-logo {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.navbar-list {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+}
+
+.navbar-item {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-link {
+    color: white;
+    font-size: 20px;
+
+}
+
+.dropdown-menu {
+    left: auto;
+    right: 0;
+    top: 110%;
+    min-width: 270px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.header-inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+
+}
+
+.header-inner__content {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-title {
+    color: #000;
+    font-size: 52px;
+    margin-bottom: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+
+}
+
+.header-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #000;
+    font-weight: 300;
+
+
+}
+
+.header-text {
+    margin-bottom: 55px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.photo-space {
+    width: 600px;
+    height: 400px;
+    background-color: #8c8c8c99;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.footer {
+    background-color: #111;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.map-map {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.header-card-inner__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+
+    width: 350px;
+    height: 380px;
+    border: 1px solid rgb(201, 190, 190);
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: fill;
+    color: #000;
+    margin: 20px;
+
+}
+
+.card:hover {
+    background-color: black;
+    border: O.1px solid transparent;
+    color: white;
+    transition: 0.4s;
+
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    transition: 0.4s;
+    margin-bottom: 10px;
+}
+
+
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px;
+
+}
+
+.card-text {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/* food info */
+.food-tag__space {
+    display: flex;
+    justify-content: flex-start;
+}
+.food-tag {
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: #8c8c8c99;
+    font-size: 14px;
+}
+.food-item__info {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.food-item__main {
+    display: flex;
+    justify-content:space-between; 
+     flex-wrap: wrap;
+}
+
+.food-item__textspace {
+    max-width: 650px;
+    line-height: 30px;
+}
+
+.food-item__title {
+    font-size: 40px;
+    font-weight: bold;
+   
+}
+.food-item__photo {
+    width: 450px;
+    height: 450px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+ 
+}
+.food-item__photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.food-item__textspace {
+    margin: 20px;
+}
+.food-ingredient__list {
+    width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ingredients-title {
+   font-size: 30px;
+   margin-top: 20px;
+   margin-bottom: 20px; 
+}
+.ingredient-item {
+    margin-bottom: 12px;
+    
+}
+.cooking-title {
+   font-size: 30px;
+   margin-top: 20px;
+   margin-bottom: 20px; 
+}
+.food-cooking__item {
+   margin-bottom: 20px;
+   list-style-type: none;
+}
+.name-input__space {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.name-input {
+    width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	font-size: 14px;
+	outline: none;
+	transition: border-color 0.15s ease-in-out;
+	width:400px
+}	
+.name-input__button {
+    width: 100%;
+	padding: 6px 10px;
+	border: 1px solid transparent;
+    background-color: white;
+    color: #000;
+	border-radius: 20px;
+	font-size: 16px;
+	outline: none;
+	transition: border-color 0.15s ease-in-out;
+	width:100px;
+    margin-left: 20px;
+}
+.ingredient-input__button {
+    width: 100%;
+	padding: 6px 10px;
+	border: 1px solid transparent;
+    background-color: black;
+    color: #fff;
+	border-radius: 20px;
+	font-size: 16px;
+	outline: none;
+	transition: border-color 0.15s ease-in-out;
+	width:100px;
+    margin-left: 20px;
+}
+.search-name__space {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+}
