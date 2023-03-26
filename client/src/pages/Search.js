@@ -15,8 +15,11 @@ const Search = () => {
 					<p className="header-subtitle">
 						Just drag the photo to the space below
 					</p>
+
 					<SearchByImage />											
-					
+						<h1 className="new-title">
+						Or you could even search by ingredients
+					</h1>
 					<SearchByIngredients />
 				</div>
 			</div>

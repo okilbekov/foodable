@@ -167,6 +167,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+ 
    
 }
 
@@ -358,4 +359,10 @@ section {
   
     justify-content: center;
     align-items: center;
+}
+.new-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+   font-weight: 100;  
 }

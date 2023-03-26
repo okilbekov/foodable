@@ -6,7 +6,7 @@ const Header = () => {
 		<div>
 		<nav className="nav navbar navbar-expand-xl navbar-dark ">
             <div className="container">
-				<Link to="/" className="navbar-logo order-last order-xl-0">Foodable</Link>
+				<Link to="/" className="navbar-logo order-0">Foodable</Link>
                 {/* <a className="navbar-logo order-last order-xl-0" href="./index.html"> Foodable
                 </a> */}
 
