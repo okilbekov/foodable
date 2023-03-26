@@ -16,13 +16,13 @@ input_shape = (224, 224)
 def predict_food(img):
   try:
     image = np.asarray(io.imread(img), dtype="float")
+    image = cv2.resize(image, dsize=input_shape, interpolation=cv2.INTER_CUBIC)
+    image = image / image.max()
+    images = np.expand_dims(image, 0)
+    output = m(images)
+    arr = output.numpy()
   except Exception as e:
     return {"error": "WrongFormat!"}
-  image = cv2.resize(image, dsize=input_shape, interpolation=cv2.INTER_CUBIC)
-  image = image / image.max()
-  images = np.expand_dims(image, 0)
-  output = m(images)
-  arr = output.numpy()
   limit = 0.05
   max_indices = np.where(arr[0] > limit)[0]
   classes = list(pd.read_csv(labelmap_url)["name"])
@@ -33,7 +33,6 @@ def predict_food(img):
   if not res:
     return {"error": "NoMatches"}
   return res
-
 
 app = Flask(__name__)
 CORS(app)

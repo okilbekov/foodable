@@ -1,3 +1,10 @@
 env/
 __pycache__/
 key_file.json
+Dockerfile
+README.md
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+.pytest_cache

@@ -9,7 +9,6 @@ const SearchByImage = () => {
 
 	const handleSearchByImage = async (uploadedImage) => {
 		if (!uploadedImage) {
-			console.log(uploadedImage)
 			alert('Please upload an image first.')
 			return
 		}
@@ -21,8 +20,6 @@ const SearchByImage = () => {
 			const response = await axios.post('https://foodable-do7cq3w77q-ue.a.run.app/predict', formData, {
 			  headers: { 'Content-Type': 'multipart/form-data' },
 			})
-
-			console.log(response)
 
 			const fetchRecipes = async (searchName) => {
 				const options = {
@@ -44,7 +41,6 @@ const SearchByImage = () => {
 					console.log(error)
 				}
 			}
-			console.log(123)
 			const predictedFoods = response.data
 			const recipeRequests = predictedFoods.map((food) => fetchRecipes(food.class))
 			const recipeResults = await Promise.all(recipeRequests)
@@ -62,7 +58,7 @@ const SearchByImage = () => {
 
 		} catch (error) {
 			console.error('Error uploading image:', error)
-			alert('Failed to upload image. Please try again.')
+			alert('You entered wrong file format. Make sure it is an image of food.')
 		}
 	}
 

@@ -12,8 +12,6 @@ const ResultsPage = () => {
 		navigate(`/recipe/${id}`)
 	}
 
-	console.log(results)
-
 	return (
 		<div className='header-inner'>
 			<div className='container'>
