@@ -27,7 +27,14 @@ const SearchByName = () => {
 
 		try {
 			const response = await axios.request(options)
-			navigate('/results', { state: { results: response.data.results } })
+			const uniqueRecipes = response.data.results.reduce((accumulator, currentValue) => {
+				const existingRecipe = accumulator.find(recipe => recipe.title === currentValue.title)
+				if (!existingRecipe) {
+				  	accumulator.push(currentValue)
+				}
+				return accumulator
+			}, [])
+			navigate('/results', { state: { results: uniqueRecipes } })
 		} catch (error) {
 			console.log(error)
 		}

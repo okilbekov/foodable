@@ -44,13 +44,21 @@ const SearchByImage = () => {
 					console.log(error)
 				}
 			}
+			console.log(123)
+			const predictedFoods = response.data
+			const recipeRequests = predictedFoods.map((food) => fetchRecipes(food.class))
+			const recipeResults = await Promise.all(recipeRequests)
+			const combinedResults = [].concat(...recipeResults)
+			
+			const uniqueRecipes = combinedResults.reduce((accumulator, currentValue) => {
+				const existingRecipe = accumulator.find(recipe => recipe.title === currentValue.title)
+				if (!existingRecipe) {
+				  	accumulator.push(currentValue)
+				}
+				return accumulator
+			}, [])
 
-			const predictedFoods = response.data; // Assuming the backend returns an array of food names
-			const recipeRequests = predictedFoods.map((food) => fetchRecipes(food.class));
-			const recipeResults = await Promise.all(recipeRequests);
-			const combinedResults = [].concat(...recipeResults);
-
-			navigate('/results', { state: { results: combinedResults } })
+			navigate('/results', { state: { results: uniqueRecipes } })
 
 		} catch (error) {
 			console.error('Error uploading image:', error)
