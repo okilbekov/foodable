@@ -35,7 +35,7 @@ Foodable is a web application designed to make cooking easy, fun, and inspiring 
 ### Installation
 1. Clone the repository: 
 ```
-git clone https://github.com/yourusername/foodable.git
+git clone https://github.com/okilbekov/foodable.git
 ```
 
 2. Navigate to the project directory:
